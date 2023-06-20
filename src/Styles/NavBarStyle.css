@@ -1,0 +1,40 @@
+* {
+  font-family: 'Bree Serif', serif;
+  font-family: 'Playfair Display', serif;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #415a77;
+  align-items: center;
+}
+
+nav h1 {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 40px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav span {
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+nav span:hover {
+  color: #fff;
+  border-bottom: 2px solid #778da9;
+  padding-bottom: 5px;
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+}
