@@ -37,18 +37,24 @@ nav span:hover {
 span #HomeLight,
 #MoviesLight,
 #TrendingLight {
-  color: #fff;
+  color: #ffffff;
 }
 
 span #HomeLight:hover,
 #MoviesLight:hover,
 #TrendingLight:hover {
-  border-bottom: 2px solid #ff206e;
+  border-bottom: 2px solid #778da9;
 }
 
 
 #navBarColor {
-  background-color: pink;
+  background-color: rgb(2, 255, 40);
+  transition: .6s;
+}
+
+#navBarColor span:hover {
+  border-bottom: 2px solid #ff206e;
+  padding-bottom: 5px;
 }
 
 .nav-options {
