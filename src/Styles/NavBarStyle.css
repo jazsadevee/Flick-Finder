@@ -1,5 +1,4 @@
 * {
-  font-family: 'Bree Serif', serif;
   font-family: 'Playfair Display', serif;
 }
 
@@ -35,21 +34,29 @@ nav span:hover {
   padding-bottom: 5px;
 }
 
-.nav-options {
-  display: flex;
-  align-items: center;
+span #HomeLight,
+#MoviesLight,
+#TrendingLight {
+  color: #fff;
 }
 
-.input-group {
-  display: flex;
-  align-items: center;
+span #HomeLight:hover,
+#MoviesLight:hover,
+#TrendingLight:hover {
+  border-bottom: 2px solid #ff206e;
 }
+
 
 #navBarColor {
   background-color: pink;
 }
 
-#Color-Switcher {
+.nav-options {
+  display: flex;
+  align-items: center;
+}
+
+#Color-switcher {
   position: relative;
   margin-right: 40px;
   background-color: #778da9;
@@ -80,6 +87,20 @@ nav span:hover {
   transition: .6s;
 }
 
+#heading {
+  color: #000000;
+}
+
+#search {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
 .input-group input {
   position: relative;
   width: 323px;
@@ -93,6 +114,7 @@ nav span:hover {
   padding-left: 17px;
   font-size: 12px;
   color: black;
+  font-style: italic;
 }
 
 .input-group input::placeholder {
@@ -101,9 +123,4 @@ nav span:hover {
 
 .input-group input:focus {
   outline: none;
-}
-
-#search {
-  position: absolute;
-  margin-left: 310px;
 }
