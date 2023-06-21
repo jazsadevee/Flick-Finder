@@ -15,6 +15,7 @@ nav h1 {
   color: #fff;
   margin-left: 40px;
   font-size: 40px;
+  font-weight: bold;
 }
 
 nav a {
@@ -37,4 +38,72 @@ nav span:hover {
 .nav-options {
   display: flex;
   align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+#navBarColor {
+  background-color: pink;
+}
+
+#Color-Switcher {
+  position: relative;
+  margin-right: 40px;
+  background-color: #778da9;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#Color-switcher-mover {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  background-color: #fff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: .6s;
+}
+
+#Color-switcher-moved {
+  position: absolute;
+  background-color: #fff;
+  left: 40px;
+  top: 4px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: .6s;
+}
+
+.input-group input {
+  position: relative;
+  width: 323px;
+  height: 4vh;
+  border-radius: 16px;
+  border: none;
+  margin-right: 30px;
+}
+
+.input-group input[type='text'] {
+  padding-left: 17px;
+  font-size: 12px;
+  color: black;
+}
+
+.input-group input::placeholder {
+  color: black;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+#search {
+  position: absolute;
+  margin-left: 310px;
 }
