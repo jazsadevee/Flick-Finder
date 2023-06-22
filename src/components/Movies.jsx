@@ -1,9 +1,13 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import axios from 'axios'
+import { BsFillPlayBtnFill } from 'react-icons/bs'
+import '../Styles/Videos.css'
+import NoPoster from './NoPoster.jpg'
 
 function Movies() {
   const [moviesData, setMoviesData] = useState([])
   const Api = "https://api.themoviedb.org/3/discover/movie"
+  const Images = 'https://image.tmdb.org/t/p/w500/'
 
   const MovieCall = async () => {
     const data = await axios.get(Api, {
@@ -11,14 +15,27 @@ function Movies() {
         api_key: '82f1500284448feca2bdea8ff7139c69',
       }
     })
-    console.log(data.data.results);
+    const results = data.data.results
+    setMoviesData(results)
   }
   useEffect(() => {
     MovieCall()
   }, [])
+  console.log(moviesData);
+  // console.log(Images);
   return (
     <Fragment>
-      <h1>Movies</h1>
+      {moviesData.map((movie) => {
+        return (
+          <Fragment>
+            <div id='container'>
+              <BsFillPlayBtnFill color='yellow' fontSize={40} id='playIcon' />
+              <img src={movie.poster_path ? `${Images}${movie.poster_path}` : NoPoster} alt='' />
+              <h3>{movie.title}</h3>
+            </div>
+          </Fragment>
+        )
+      })}
     </Fragment>
   )
 }
