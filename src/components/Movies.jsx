@@ -29,7 +29,7 @@ function Movies() {
         return (
           <Fragment>
             <div id='container'>
-              <BsFillPlayBtnFill color='yellow' fontSize={40} id='playIcon' />
+              <BsFillPlayBtnFill color='white' fontSize={40} id='playIcon' />
               <img src={movie.poster_path ? `${Images}${movie.poster_path}` : NoPoster} alt='' />
               <h3>{movie.title}</h3>
             </div>
