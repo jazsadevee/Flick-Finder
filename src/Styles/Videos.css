@@ -53,6 +53,7 @@ body {
   justify-content: center;
   /* font-weight: bold; */
   /* text-decoration: underline; */
+  text-transform: uppercase;
 }
 
 .movies-container h3:hover {
