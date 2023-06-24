@@ -48,6 +48,17 @@ body {
 .movies-container img {
   cursor: pointer;
   transition: .7s;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
+}
+
+.movies-container h3:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #778da9;
+  /* color: black; */
 }
 
 .movies-container img:hover {
