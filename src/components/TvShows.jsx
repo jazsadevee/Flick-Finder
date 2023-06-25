@@ -21,6 +21,41 @@ function TvShows() {
     TvShows()
   }, [])
   console.log(showData)
+
+  // ---------------------------------------------------------------------------------------------------------------------
+  // CODE TO FIX MULTIPLE API CALLS
+
+
+  // function TvShows() {
+  //   const apiEndpoint = 'https://api.themoviedb.org/3/discover/tv'
+  //   const apiKey = '82f1500284448feca2bdea8ff7139c69'
+  //   const imagesEndpoint = 'https://image.tmdb.org/t/p/w500/'
+
+  //   const [showData, setShowData] = useState([])
+
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(apiEndpoint, {
+  //         params: {
+  //           api_key: apiKey,
+  //         },
+  //       })
+  //       setShowData(response.data.results)
+  //     } catch (error) {
+  //       console.error('Error fetching TV show data:', error)
+  //     }
+  //   }
+
+  //   fetchData()
+  // }, [])
+
+  // console.log(showData)
+
+  // ---------------------------------------------------------------------------------------------------------------------
+
+
   return (
     <Fragment>
       {showData.map((shows) => {
