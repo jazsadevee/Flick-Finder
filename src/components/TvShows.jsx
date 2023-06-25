@@ -1,8 +1,9 @@
 import axios from 'axios'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function TvShows() {
-  const Api = 'https://api.themoviedb.org/3/dicover/tv/'
+  const Api = 'https://api.themoviedb.org/3/discover/tv'
+  const [showData, setShowData] = useState([])
 
   const TvShows = async () => {
     const data = await axios.get(Api, {
@@ -10,7 +11,9 @@ function TvShows() {
         api_key: '82f1500284448feca2bdea8ff7139c69',
       }
     })
-    console.log(data);
+    const results = (data.data.results)
+    setShowData(results)
+    console.log(showData);
   }
   useEffect(() => {
     TvShows()
