@@ -1,11 +1,15 @@
 import axios from 'axios'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useContext, useState } from 'react'
 import { BsFillPlayBtnFill } from 'react-icons/bs'
+import { AiOutlineCloseSquare } from 'react-icons/ai'
+import { Container } from './Navbar'
 import NoPoster from './NoPoster.jpg'
 
 function TvShows() {
-  const Api = 'https://api.themoviedb.org/3/discover/tv'
+  const { toggle, inputValue } = useContext(Container)
   const [showData, setShowData] = useState([])
+  const [trailer, setTrailer] = useState([false])
+  const Api = 'https://api.themoviedb.org/3/discover/tv'
   const Images = 'https://image.tmdb.org/t/p/w500/'
 
   const TvShows = async () => {
@@ -61,16 +65,17 @@ function TvShows() {
       {showData.map((shows) => {
         return (
           <Fragment>
-            <div id='container'>
-              <BsFillPlayBtnFill color='white' fontSize={40} id='playIcon' />
+            <div id={trailer ? 'container' : 'NoContainer'}>
+              <BsFillPlayBtnFill color='white' fontSize={40} id={trailer ? 'playIcon' : 'hide'} onClick={} />
               <img src={shows.poster_path ? `${Images}${shows.poster_path}` : NoPoster} alt='' />
-              <h3 id={shows.name.length > 28 ? 'smaller-Text' : ''}>
+              <h3 id={shows.name.length > 28 ? 'smaller-Text' : ''} className={toggle ? 'mainColor' : 'secondaryColor'}>
                 {shows.name}
               </h3>
             </div>
           </Fragment>
         )
       })}
+      <AiOutlineCloseSquare onClick={() => setTrailer(true)} />
     </Fragment>
 
   )
