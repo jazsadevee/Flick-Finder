@@ -2,6 +2,10 @@
   font-family: 'Playfair Display', serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   width: 100vw;
   display: flex;

@@ -30,42 +30,6 @@ function Movies() {
   console.log(moviesData);
   // console.log(Images);
 
-
-  // ---------------------------------------------------------------------------------------------------------------------
-  // CODE TO FIX MULTIPLE API CALLS
-
-  // function Movies() {
-  //   const { toggle, inputValue } = useContext(Container)
-  //   const input = inputValue
-  //   const [moviesData, setMoviesData] = useState([])
-  //   const [trailer, setTrailer] = useState(true)
-  //   const Shown = input ? 'search' : 'discover'
-  //   const Api = `https://api.themoviedb.org/3/${Shown}/movie`
-  //   const Images = 'https://image.tmdb.org/t/p/w500/'
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(Api, {
-  //         params: {
-  //           api_key: '82f1500284448feca2bdea8ff7139c69',
-  //           query: input
-  //         }
-  //       })
-  //       setMoviesData(response.data.results)
-  //     } catch (error) {
-  //       console.error('Error fetching movie data:', error)
-  //     }
-  //   }
-
-  //   fetchData()
-  // }, [Api, input])
-
-  // console.log(moviesData);
-
-  // ---------------------------------------------------------------------------------------------------------------------
-
-
   return (
     <Fragment>
       <div className={toggle ? "mainBgColor" : "secondaryBgColor"}>
@@ -76,7 +40,8 @@ function Movies() {
                 <div id={trailer ? 'container' : 'NoContainer'}>
                   <BsFillPlayBtnFill color='white' fontSize={40} id='playIcon' />
                   <img src={movie.poster_path ? `${Images}${movie.poster_path}` : NoPoster} alt='' />
-                  <h3 id={movie.title.length > 28 ? 'smaller-Text' : ''} >{movie.title}</h3>
+                  <h3 id={movie.title.length > 28 ? 'smaller-Text' : ''} >{movie.title}
+                  </h3>
                 </div>
               </Fragment>
             )
