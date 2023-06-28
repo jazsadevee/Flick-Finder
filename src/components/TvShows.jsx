@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { Fragment, useEffect, useContext, useState } from 'react'
+import axios from 'axios'
 import { BsFillPlayBtnFill } from 'react-icons/bs'
 import { AiOutlineCloseSquare } from 'react-icons/ai'
 import { Container } from './Navbar'
@@ -49,7 +49,7 @@ function TvShows() {
               </Fragment>
             )
           })}
-          <AiOutlineCloseSquare id={toggle ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={55} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
+          <AiOutlineCloseSquare id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={35} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
         </div>
       </div>
     </Fragment >
