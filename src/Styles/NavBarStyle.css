@@ -8,6 +8,7 @@ body {
 
 nav {
   width: 100vw;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   background-color: #415a77;
