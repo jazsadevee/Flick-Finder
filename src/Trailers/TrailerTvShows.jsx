@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 import movieTrailer from 'movie-trailer'
 import '../Styles/Trailer.css'
 
-function TrailerMovies({ moviesTitle }) {
+function TrailerTvShows({ TvShowsTitle }) {
   const [video, setVideo] = useState("");
   const [videoURL, setVideoURL] = useState("");
 
@@ -13,7 +13,7 @@ function TrailerMovies({ moviesTitle }) {
   // videoURL state variable
 
   function handleSearch() {
-    setVideo(moviesTitle)
+    setVideo(TvShowsTitle)
     movieTrailer(video).then((res) => {
       setVideoURL(res);
     });
@@ -32,4 +32,4 @@ function TrailerMovies({ moviesTitle }) {
   )
 }
 
-export default TrailerMovies
+export default TrailerTvShows

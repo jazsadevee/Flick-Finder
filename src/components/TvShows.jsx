@@ -5,6 +5,7 @@ import { AiOutlineCloseSquare } from 'react-icons/ai'
 import { Container } from './Navbar'
 import '../Styles/Videos.css'
 import NoPoster from './NoPoster.jpg'
+import TrailerTvShows from '../Trailers/TrailerTvShows'
 
 function TvShows() {
   const { toggle, inputValue } = useContext(Container)
@@ -54,6 +55,7 @@ function TvShows() {
               </Fragment>
             )
           })}
+          {trailer ? console.log : <TrailerTvShows TvShowsTitle={title} />}
           <AiOutlineCloseSquare id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={35} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
         </div>
       </div>
