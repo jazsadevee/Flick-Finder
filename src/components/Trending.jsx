@@ -5,7 +5,7 @@ import { BsFillPlayBtnFill } from 'react-icons/bs'
 import { AiOutlineCloseSquare } from 'react-icons/ai'
 import NoPoster from './NoPoster.jpg'
 import '../Styles/Videos.css'
-
+import TrailerTrending from '../Trailers/TrailerTrending'
 
 function Trending() {
   const { toggle } = useContext(Container)
@@ -51,6 +51,7 @@ function Trending() {
               </Fragment>
             )
           })}
+          {trailer ? console.log : <TrailerTrending TrendTitle={trendTitle} toggle={toggle} />}
           <AiOutlineCloseSquare id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={35} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
         </div>
       </div>
