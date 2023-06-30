@@ -17,13 +17,13 @@ function Navbar() {
         <nav className={toggle ? '' : 'navBarColor'}>
           <div className='nav-options'>
             <h1 id={toggle ? '' : 'heading'}>Movie Night</h1>
-            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : '#bbdefb' } }}>
+            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Movies</span>
             </NavLink>
-            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : '#bbdefb' } }}>
+            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Tv Shows</span>
             </NavLink>
-            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : '#bbdefb' } }}>
+            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Trending</span>
             </NavLink>
           </div>

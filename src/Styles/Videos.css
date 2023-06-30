@@ -23,8 +23,8 @@ body {
 }
 
 .movies-container img {
-  width: 350px;
-  height: 550px;
+  width: 330px;
+  height: 465px;
   margin: 25px 0px 4px 15px;
   border-radius: 18px;
 }
@@ -52,7 +52,8 @@ body {
 .movies-container img {
   cursor: pointer;
   transition: .7s;
-  color: #fff;
+  /* Title Colors | Dark && Light Theme */
+  color: #773af9;
   display: flex;
   justify-content: center;
   /* font-weight: bold; */
@@ -63,7 +64,8 @@ body {
 .movies-container h3:hover {
   text-decoration: none;
   border-bottom: 4px solid #778da9;
-  /* color: black; */
+  /* Titles Colors */
+  color: black;
 }
 
 .movies-container img:hover {
@@ -80,7 +82,7 @@ body {
 
 #smaller-Text {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
 }
@@ -110,7 +112,7 @@ body {
 }
 
 .DarkTheme {
-  color: #fff;
+  color: #dcff15;
 }
 
 .LightThemeClose {
