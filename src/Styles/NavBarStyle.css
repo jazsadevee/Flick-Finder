@@ -10,13 +10,15 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: #001219;
+  background-color: #001845;
   align-items: center;
 }
 
 nav h1 {
-  color: #fff;
+  color: #eef7ff;
   margin-left: 40px;
+  font-size: 35px;
+  /* font-weight: bold; */
 }
 
 nav a {
@@ -26,13 +28,14 @@ nav a {
 nav span {
   cursor: pointer;
   margin-left: 40px;
-  font-size: .85rem;
+  font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 nav span:hover {
   color: #fff;
-  border-bottom: 2px solid #EE9B00;
+  border-bottom: 2px solid #0466c8;
   padding-bottom: 5px;
 }
 
@@ -51,7 +54,7 @@ span #HomeLight:hover,
 }
 
 #navBarColor {
-  background-color: #38bdab;
+  background-color: #012a4a;
   transition: .6s;
 }
 

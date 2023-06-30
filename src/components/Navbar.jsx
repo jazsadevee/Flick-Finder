@@ -16,14 +16,14 @@ function Navbar() {
       <Fragment>
         <nav className={toggle ? '' : 'navBarColor'}>
           <div className='nav-options'>
-            <h1 id={toggle ? '' : 'heading'}>Movie Night</h1>
-            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
+            <h1 id={toggle ? '' : 'heading'}>Flick Finder</h1>
+            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Movies</span>
             </NavLink>
-            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
+            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Tv Shows</span>
             </NavLink>
-            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : 'red' } }}>
+            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Trending</span>
             </NavLink>
           </div>

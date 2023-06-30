@@ -31,8 +31,9 @@ function TvShows() {
     setTimeout(() => {
       TvShows()
     }, 100)
+    // TvShows()
   }, [input])
-  console.log(showData)
+  // console.log(showData)
   const TvShowTitle = (shows) => {
     setTitle(shows.name)
     setTrailer(!trailer)
@@ -40,8 +41,8 @@ function TvShows() {
 
   return (
     <Fragment>
-      <div className={toggle ? "mainBgColor" : "secondaryColor"}>
-        <div className="movies-container">
+      <div className={toggle ? "mainBgColor" : "secondaryBgColor"}>
+        <div className='movies-container'>
           {showData.map((shows) => {
             return (
               <Fragment key={shows.id}>
@@ -60,7 +61,6 @@ function TvShows() {
         </div>
       </div>
     </Fragment >
-
   )
 }
 

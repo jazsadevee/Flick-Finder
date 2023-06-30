@@ -9,12 +9,13 @@ import TrailerTrending from '../Trailers/TrailerTrending'
 
 function Trending() {
   const { toggle } = useContext(Container)
-  const Api = 'https://api.themoviedb.org/3/'
-  const TrendShown = 'trending/all/week'
-  const Images = 'https://image.tmdb.org/t/p/w500/'
   const [trending, setTrending] = useState([])
   const [trailer, setTrailer] = useState(true)
   const [trendTitle, setTrendTitle] = useState('')
+  const TrendShown = 'trending/all/week'
+  const Api = 'https://api.themoviedb.org/3/'
+  const Images = 'https://image.tmdb.org/t/p/w500/'
+
   const Trends = async () => {
     const data = await axios.get(`${Api}${TrendShown}`, {
       params: {
@@ -32,9 +33,9 @@ function Trending() {
   // console.log(trending);
   const TrendTitle = (trend) => {
     setTrendTitle(trend.title)
-    // setTitle(shows.name)
     setTrailer(!trailer)
   }
+
   return (
     <Fragment>
       <div className={toggle ? "mainBgColor" : "secondaryBgColor"}>
@@ -45,7 +46,8 @@ function Trending() {
                 <div id={trailer ? 'container' : 'NoContainer'}>
                   <BsFillPlayBtnFill color='white' fontSize={40} id={trailer ? "playIcon" : 'hide'} onClick={() => TrendTitle(trend)} />
                   <img src={trend.poster_path ? `${Images}${trend.poster_path}` : NoPoster} alt='' onClick={() => TrendTitle(trend)} />
-                  <h3 id='smaller-Text' className={toggle ? 'mainColor' : 'secondaryColor'} >{trend.title}
+                  <h3 id='smaller-Text' className={toggle ? 'mainColor' : 'secondaryColor'} >
+                    {trend.title}
                   </h3>
                 </div>
               </Fragment>

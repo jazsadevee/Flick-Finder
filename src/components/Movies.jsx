@@ -31,7 +31,7 @@ function Movies() {
     setTimeout(() => {
       MovieCall()
     }, 100)
-    MovieCall()
+    // MovieCall()
   }, [input])
   // console.log(moviesData);
   // console.log(Images);
@@ -49,7 +49,7 @@ function Movies() {
                 <div id={trailer ? 'container' : 'NoContainer'}>
                   <BsFillPlayBtnFill color='white' fontSize={40} id={trailer ? "playIcon" : 'hide'} onClick={() => MoviesTitle(movie)} />
                   <img src={movie.poster_path ? `${Images}${movie.poster_path}` : NoPoster} alt='' onClick={() => MoviesTitle(movie)} />
-                  <h3 id={movie.title.length > 28 ? 'smaller-Text' : ''} >
+                  <h3 id={movie.title.length > 28 ? 'smaller-Text' : ''} className={toggle ? 'mainColor' : 'secondaryColor'}>
                     {movie.title}
                   </h3>
                 </div>
