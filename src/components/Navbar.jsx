@@ -23,13 +23,13 @@ function Navbar() {
             </div>
             <h1 id={toggle ? '' : 'heading'}>Flick Finder</h1>
 
-            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
+            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : '#B9F5D8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Movies</span>
             </NavLink>
-            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
+            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : '#B9F5D8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Tv Shows</span>
             </NavLink>
-            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
+            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : '#B9F5D8' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Trending</span>
             </NavLink>
           </div>

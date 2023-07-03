@@ -57,7 +57,7 @@ function Movies() {
             )
           })}
           {trailer ? console.log : <TrailerMovies moviesTitle={movieTitle} toggle={toggle} />}
-          <AiOutlineCloseSquare id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={35} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
+          <AiOutlineCloseSquare id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={30} color='white' cursor={'pointer'} onClick={() => setTrailer(true)} />
         </div>
       </div>
     </Fragment>

@@ -3,7 +3,8 @@
 }
 
 .player {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   margin-top: 120px;
   z-index: 999;
 }

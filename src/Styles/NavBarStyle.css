@@ -2,6 +2,12 @@
   font-family: 'Playfair Display', serif;
 }
 
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -10,8 +16,9 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: #240046;
+  background-color: #10451d;
   align-items: center;
+  border-bottom: 3px solid #174f25;
 }
 
 nav h1 {
@@ -34,8 +41,8 @@ nav span {
 }
 
 nav span:hover {
-  color: #00d5ff;
-  border-bottom: 2px solid #8e14ff;
+  color: #4ad66d;
+  border-bottom: 2px solid #fff;
   padding-bottom: 5px;
 }
 
@@ -43,19 +50,21 @@ span #HomeLight,
 #MoviesLight,
 #TrendingLight,
 #PricingLight {
-  color: #ffffff;
+  color: black;
 }
 
 span #HomeLight:hover,
 #MoviesLight:hover,
 #TrendingLight:hover,
 #PricingLight:hover {
-  border-bottom: 2px solid #ff206e;
+  border-bottom: 2px solid #fff;
+  color: #4ad66d;
 }
 
-#navBarColor {
-  background-color: #10002b;
+.navBarColor {
+  background-color: #208b3a;
   transition: .6s;
+  border-bottom: 3px solid #1a7431;
 }
 
 .nav-options {
@@ -64,11 +73,11 @@ span #HomeLight:hover,
 }
 
 #heading {
-  color: #ff206e;
+  color: black;
 }
 
 #navBarColor span:hover {
-  border-bottom: 2px solid #ff206e;
+  border-bottom: 2px solid #4ad66d;
   padding-bottom: 5px;
 }
 
@@ -84,10 +93,11 @@ span #HomeLight:hover,
 #Color-switcher {
   position: relative;
   margin-right: 40px;
-  background-color: #413E44;
+  background-color: #969696;
   width: 80px;
   height: 40px;
   border-radius: 20px;
+  border: .5px solid black;
 }
 
 #Color-switcher-mover {
@@ -119,11 +129,13 @@ span #HomeLight:hover,
   border-radius: 16px;
   border: none;
   margin-right: 30px;
+  border: .5px solid black;
+
 }
 
 .input-group input[type='text'] {
   padding-left: 17px;
-  font-size: 1rem;
+  font-size: 15px;
   color: black;
 }
 
@@ -138,4 +150,5 @@ span #HomeLight:hover,
 #search {
   position: absolute;
   margin-left: 310px;
+
 }
