@@ -13,12 +13,12 @@ body {
 }
 
 .mainBgColor {
-  background-color: #001233;
+  background-color: #10002b;
   width: 100%;
 }
 
 .secondaryBgColor {
-  background-color: #fff;
+  background-color: #eddeff;
   width: 100%;
 }
 
@@ -53,19 +53,17 @@ body {
   cursor: pointer;
   transition: .7s;
   /* Title Colors | Dark && Light Theme */
-  color: #caf0f8;
+  color: #ffffff;
   display: flex;
   justify-content: center;
-  /* font-weight: bold; */
-  /* text-decoration: underline; */
   text-transform: uppercase;
 }
 
 .movies-container h3:hover {
   text-decoration: none;
-  border-bottom: 4px solid #778da9;
+  border-bottom: 4px solid #8e14ff;
   /* Titles Colors */
-  color: black;
+  color: #00d5ff;
 }
 
 .movies-container img:hover {
@@ -116,5 +114,5 @@ body {
 }
 
 .LightThemeClose {
-  color: #ff206e;
+  color: #e9ff20;
 }

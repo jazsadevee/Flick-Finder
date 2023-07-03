@@ -5,6 +5,8 @@ import Movies from './Movies'
 import TvShows from './TvShows'
 import Trending from './Trending'
 import '../Styles/NavBarStyle.css'
+import movieLogo from '../Assets/Logo.jpg'
+
 
 export const Container = React.createContext()
 
@@ -16,14 +18,18 @@ function Navbar() {
       <Fragment>
         <nav className={toggle ? '' : 'navBarColor'}>
           <div className='nav-options'>
+            <div class='logo'>
+              <img src={movieLogo} height={90} width={100} alt="Logo" />
+            </div>
             <h1 id={toggle ? '' : 'heading'}>Flick Finder</h1>
-            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
+
+            <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Movies</span>
             </NavLink>
-            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
+            <NavLink to="/TvShows" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Tv Shows</span>
             </NavLink>
-            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#dae3e5' : '#caf0f8' } }}>
+            <NavLink to="/Trending" style={({ isActive }) => { return { color: isActive ? '#fff' : '#f8f9fa' } }}>
               <span id={toggle ? 'Movies' : 'MoviesLight'}>Trending</span>
             </NavLink>
           </div>

@@ -10,12 +10,12 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color: #001845;
+  background-color: #240046;
   align-items: center;
 }
 
 nav h1 {
-  color: #eef7ff;
+  color: #fff;
   margin-left: 40px;
   font-size: 35px;
   /* font-weight: bold; */
@@ -34,8 +34,8 @@ nav span {
 }
 
 nav span:hover {
-  color: #fff;
-  border-bottom: 2px solid #0466c8;
+  color: #00d5ff;
+  border-bottom: 2px solid #8e14ff;
   padding-bottom: 5px;
 }
 
@@ -43,7 +43,7 @@ span #HomeLight,
 #MoviesLight,
 #TrendingLight,
 #PricingLight {
-  color: #fff;
+  color: #ffffff;
 }
 
 span #HomeLight:hover,
@@ -54,7 +54,7 @@ span #HomeLight:hover,
 }
 
 #navBarColor {
-  background-color: #012a4a;
+  background-color: #10002b;
   transition: .6s;
 }
 
@@ -70,6 +70,10 @@ span #HomeLight:hover,
 #navBarColor span:hover {
   border-bottom: 2px solid #ff206e;
   padding-bottom: 5px;
+}
+
+.logo img {
+  margin: 15px -35px 0 10px;
 }
 
 .input-group {
