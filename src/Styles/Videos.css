@@ -27,6 +27,7 @@ body {
   height: 465px;
   margin: 25px 0px 4px 15px;
   border-radius: 18px;
+  box-shadow: 5px 5px 9px #06190bac;
 }
 
 .mainColor {

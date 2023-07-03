@@ -25,6 +25,7 @@ nav h1 {
   color: #fff;
   margin-left: 40px;
   font-size: 35px;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 1);
   /* font-weight: bold; */
 }
 
@@ -73,7 +74,8 @@ span #HomeLight:hover,
 }
 
 #heading {
-  color: black;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.735);
 }
 
 #navBarColor span:hover {
@@ -98,6 +100,8 @@ span #HomeLight:hover,
   height: 40px;
   border-radius: 20px;
   border: .5px solid black;
+  box-shadow: 2px 2px 9px #06190bac;
+
 }
 
 #Color-switcher-mover {
@@ -150,5 +154,13 @@ span #HomeLight:hover,
 #search {
   position: absolute;
   margin-left: 310px;
-
 }
+
+/* #contact {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #10451d;
+  align-items: center;
+  border-bottom: 3px solid #174f25;
+} */
