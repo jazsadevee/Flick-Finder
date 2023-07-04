@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { HiSearch } from 'react-icons/hi'
 import { BsGithub } from 'react-icons/bs'
-import {AiFillLinkedin} from 'react-icons/ai'
+import { AiFillLinkedin } from 'react-icons/ai'
 import { Routes, Route, NavLink } from 'react-router-dom'
 import Movies from './Movies'
 import TvShows from './TvShows'
@@ -49,20 +49,21 @@ function Navbar() {
           <Route path='Trending' element={<Trending />} />
         </Routes>
 
-        {/* <footer>
-          <div id="contact">
+      </Fragment>
+      <Fragment>
+        <footer>
+          <nav className={toggle ? '' : 'navBarColor'}>
+            <div className='contact'>
+            <h3 id={toggle ? '' : 'heading'}><u>Contacts</u></h3>
             <a href="https://github.com/jazsadevee">
-              <BsGithub fontSize={30} color='red' id='contact' />
+              <BsGithub fontSize={35} color='black' id='contact' />
             </a>
-           <div><a href="https://www.linkedin.com/in/jasminevillanuevadev/">
-              <AiFillLinkedin fontSize={30} color='red' id='contact' />
-            </a>
-            </div> 
-              
-
-          </div>
-        </footer> */}
-
+            <a href="https://www.linkedin.com/in/jasminevillanuevadev/">
+              <AiFillLinkedin fontSize={35} color='black' id='contact' />
+              </a>
+            </div>
+          </nav>
+        </footer>
       </Fragment>
     </Container.Provider>
   )

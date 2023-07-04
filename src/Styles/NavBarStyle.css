@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
   background-color: #10451d;
   align-items: center;
-  border-bottom: 3px solid #174f25;
+  border-bottom: 3px solid #002d0b;
 }
 
 nav h1 {
@@ -96,8 +96,8 @@ span #HomeLight:hover,
   position: relative;
   margin-right: 40px;
   background-color: #969696;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   border-radius: 20px;
   border: .5px solid black;
   box-shadow: 2px 2px 9px #06190bac;
@@ -109,8 +109,8 @@ span #HomeLight:hover,
   left: 5px;
   top: 4px;
   background-color: #fff;
-  width: 33px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   transition: .6s;
 }
@@ -118,10 +118,10 @@ span #HomeLight:hover,
 #Color-switcher-moved {
   position: absolute;
   background-color: #fff;
-  left: 40px;
+  left: 35px;
   top: 4px;
-  width: 33px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   transition: .6s;
 }
@@ -156,11 +156,19 @@ span #HomeLight:hover,
   margin-left: 310px;
 }
 
-/* #contact {
+.contact {
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  background-color: #10451d;
+  /* background-color: #10451d; */
   align-items: center;
   border-bottom: 3px solid #174f25;
-} */
+  border-top: 3px solid #B9F5D8;
+  text-align: center;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.contact h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}

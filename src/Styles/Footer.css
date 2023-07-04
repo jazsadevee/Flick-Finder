@@ -1,0 +1,19 @@
+.contact {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #10451d;
+  align-items: center;
+  border-bottom: 3px solid #174f25;
+}
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
